@@ -1,0 +1,23 @@
+.scc-converted-price {
+  display: inline-flex !important;
+  align-items: center;
+  margin-inline-start: 0.45em;
+  padding: 0.14em 0.48em;
+  border: 1px solid rgba(34, 211, 238, 0.42);
+  border-radius: 999px;
+  background: rgba(5, 24, 43, 0.88);
+  color: #a3e635 !important;
+  font-size: 0.78em !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.01em;
+  text-decoration: none !important;
+  white-space: nowrap;
+  vertical-align: middle;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.scc-converted-price[data-stale="true"] {
+  border-color: rgba(251, 191, 36, 0.55);
+  color: #fcd34d !important;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "steam-currency-converter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Steam mağazası için bağımlılıksız Chrome para birimi dönüştürücüsü",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run validate && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

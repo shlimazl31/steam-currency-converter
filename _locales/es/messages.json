@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "Conversor de moneda para Steam" },
+  "extDescription": { "message": "Muestra precios de referencia convertidos junto a los precios de la tienda Steam." }
+}

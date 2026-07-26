@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steam Currency Converter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <img src="../assets/icons/icon-48.png" width="48" height="48" alt="">
+        <div>
+          <p class="eyebrow">STEAM</p>
+          <h1 data-i18n="appName">Currency Converter</h1>
+        </div>
+        <label class="switch" aria-label="Enable extension">
+          <input id="enabled" type="checkbox">
+          <span></span>
+        </label>
+      </header>
+
+      <section class="status-card" aria-live="polite">
+        <div class="status-topline">
+          <span id="statusDot" class="status-dot"></span>
+          <strong id="statusTitle" data-i18n="checking">Checking Steam page…</strong>
+        </div>
+        <p id="statusDetail" class="status-detail"></p>
+        <div id="ratePreview" class="rate-preview" hidden>
+          <span id="ratePair"></span>
+          <strong id="rateValue"></strong>
+        </div>
+      </section>
+
+      <section class="settings-card">
+        <label class="field">
+          <span data-i18n="targetCurrency">Target currency</span>
+          <select id="targetCurrency"></select>
+        </label>
+
+        <div class="field source-field">
+          <span data-i18n="steamCurrency">Steam currency</span>
+          <div class="segmented" role="group">
+            <button id="sourceAuto" type="button" data-mode="auto" data-i18n="automatic">Automatic</button>
+            <button id="sourceManual" type="button" data-mode="manual" data-i18n="manual">Manual</button>
+          </div>
+          <select id="sourceCurrency" aria-label="Steam currency"></select>
+        </div>
+
+        <label class="field">
+          <span data-i18n="language">Language</span>
+          <select id="language">
+            <option value="auto" data-i18n="automatic">Automatic</option>
+            <option value="tr">Türkçe</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="pt_BR">Português (Brasil)</option>
+            <option value="ru">Русский</option>
+          </select>
+        </label>
+      </section>
+
+      <p class="disclaimer" data-i18n="disclaimer">Reference rates only. Steam checkout prices are not changed.</p>
+
+      <a class="patreon" href="https://www.patreon.com/16358118/join" target="_blank" rel="noopener noreferrer">
+        <span class="heart">♥</span>
+        <span data-i18n="support">Support me on Patreon</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <footer>
+        <span>v1.0.0</span>
+        <span data-i18n="poweredBy">Rates by Frankfurter</span>
+      </footer>
+    </main>
+    <script src="../src/shared.js"></script>
+    <script src="translations.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
